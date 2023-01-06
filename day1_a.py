@@ -6,7 +6,7 @@
 def main():
 
     # open file
-    with open(file="1.in") as file:
+    with open(file="day1.in") as file:
 
         calories_by_elf = [0]
         elf_id = 0
