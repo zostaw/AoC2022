@@ -24,8 +24,9 @@ def main():
         if calories > calories_by_elf[richest_elf]:
             richest_elf = id
 
-    return richest_elf + 1
+    return richest_elf, calories_by_elf[richest_elf]
 
 
 if __name__ == "__main__":
-    print(main())
+    elf_id, calories = main()
+    print(f"Richest elf: {elf_id}, handles {calories} calories!")
