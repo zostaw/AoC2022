@@ -102,7 +102,8 @@ def build_tree(data):
 
 def big_dirs(node, limit, lst=[]):
     # takes root of tree and dir size limit as arguments
-    # returns sum of all directories under limit (counts subdirectories multiple times)
+    # lst - list will be appended with list of dirs that fit the requirements
+    # returns list of directories above limit
 
     if int(node.size) >= limit:
         lst.append(int(node.size))
