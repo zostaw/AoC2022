@@ -48,9 +48,9 @@ def calculate_cargo_movements(cargo, rules):
             moved_crate = cargo[from_id].pop()
             cargo[to_id].append(moved_crate)
 
-    result=""
+    result = ""
     for stack in cargo:
-        result+=stack[-1]
+        result += stack[-1]
 
     print(result)
 

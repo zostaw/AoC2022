@@ -132,6 +132,3 @@ if __name__ == "__main__":
     dirs_list = big_dirs(root, space_to_save)
     dirs_list.sort()
     print(dirs_list[0])
-
-
-
