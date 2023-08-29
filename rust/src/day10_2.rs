@@ -81,11 +81,13 @@ fn main() {
 
     let screen = clock_circuit(state, queue);
 
-    println!("Output:\n{:?}\n{:?}\n{:?}\n{:?}\n{:?}\n{:?}", 
-             &screen[0..40],
-             &screen[40..80],
-             &screen[80..120],
-             &screen[120..160],
-             &screen[160..200],
-             &screen[200..240]);
+    let s1: String = screen[0..40].iter().collect();
+    let s2: String = screen[40..80].iter().collect();
+    let s3: String = screen[80..120].iter().collect();
+    let s4: String = screen[120..160].iter().collect();
+    let s5: String = screen[160..200].iter().collect();
+    let s6: String = screen[200..240].iter().collect();
+
+    println!("Output:\n{}\n{}\n{}\n{}\n{}\n{}", 
+             s1, s2, s3, s4, s5, s6);
 }
